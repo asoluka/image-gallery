@@ -31,6 +31,7 @@ const decreaseCounter = () => {
 const mainView = document.querySelector('.item-1')
 const views = document.querySelectorAll('[class*="item-"]:not(:last-child)')
 const lastView = document.querySelector('[class*="item-"]:last-child')
+const lastItemOverlay = document.querySelector('#more-items')
 
 // Gallery Modal
 const imageGallery = document.querySelector('.image-gallery')
@@ -40,6 +41,7 @@ const nextButton = document.querySelector('.next')
 const prevButton = document.querySelector('.prev')
 
 lastView.style.backgroundImage = `url('${imageUrls.slice(-1)}')`
+lastItemOverlay.classList.add('more-items')
 
 document.onreadystatechange = () => {
   if (document.readyState === 'complete') {
