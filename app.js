@@ -58,13 +58,11 @@ document.onreadystatechange = () => {
 
     nextButton.addEventListener('click', () => {
       increaseCounter()
-      console.log(imageCounter)
       galleryShowcaseArea.style.backgroundImage = `url('${imageUrls[imageCounter]}')`
     })
 
     prevButton.addEventListener('click', () => {
       decreaseCounter()
-      console.log(imageCounter)
       galleryShowcaseArea.style.backgroundImage = `url('${imageUrls[imageCounter]}')`
     })
 
