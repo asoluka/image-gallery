@@ -22,11 +22,18 @@
 }
 
 [class*="item-"] {
-  cursor: pointer;
   border-radius: 10px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+[class*="item-"]:hover {
+  opacity: 0.8;
+}
+
+[class*="item-"]:not(:first-child) {
+  cursor: pointer;
 }
 
 [class*="item-"] > .more-items {
